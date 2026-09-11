@@ -1,3 +1,12 @@
+import profile
+import sys
+
+print("PROFILE MODULE:", profile.__file__)
+print("PROJECT PATH:", sys.path[0])
+
+import streamlit as st
+...
+
 """Streamlit entry point. UI wiring only."""
 from __future__ import annotations
 import streamlit as st
