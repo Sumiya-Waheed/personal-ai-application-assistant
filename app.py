@@ -5,7 +5,7 @@ from config import APP_NAME, TOP_K
 from rag.embeddings import EmbeddingService
 from rag.retriever import Retriever
 from llm.groq_client import GroqClient
-from profile.profile_manager import ProfileManager
+from candidate_profile.profile_manager import ProfileManager
 from ui import dashboard, profile_page, opportunity_page, match_page, assistant_page, resume_page
 
 st.set_page_config(page_title=APP_NAME, page_icon="🎯", layout="wide", initial_sidebar_state="expanded")
