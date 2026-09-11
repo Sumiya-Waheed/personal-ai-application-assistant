@@ -1,6 +1,10 @@
 
 """Streamlit entry point. UI wiring only."""
 from __future__ import annotations
+import importlib.util
+
+profile_spec = importlib.util.find_spec("profile")
+print("PROFILE SPEC:", profile_spec.origin if profile_spec else "NOT FOUND")
 import streamlit as st
 from config import APP_NAME, TOP_K
 from rag.embeddings import EmbeddingService
